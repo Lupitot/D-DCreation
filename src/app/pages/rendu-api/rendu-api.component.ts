@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { RecupapiService } from '../../services/recup-api.service';
+import {Iclasses} from '../../interfaces/iclasses'
 
 @Component({
   selector: 'app-renduapi',
