@@ -1,0 +1,17 @@
+<div class="contentSelectPerso">
+  <races *ngIf="raceVisible" (selectItem)="onRaceSelected($event)"> 
+  
+  </races>
+
+  <button class="btnRaceToClasses" (click)="raceVisible = false">next</button>
+
+  <classes
+    style="display: none"
+    class="classesComponent"
+    (selectItem)="onClasseSelected($event)"
+  >
+  </classes>
+
+  <p>{{ perso.classe }}</p>
+  <p>{{ perso.race }}</p>
+</div>

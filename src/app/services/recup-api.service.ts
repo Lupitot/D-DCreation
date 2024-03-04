@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { Iclasses } from '../interfaces/iclasses';
+import { IRaces } from '../interfaces/iraces';
 
 @Injectable({
   providedIn: 'root',
@@ -34,4 +35,12 @@ export class RecupapiService {
         map((data: any) => data.results as Iclasses[]) // parcourir la liste/tableau pour executer une fonction sur chaque élément
         );
   }
+
+  public getAllRaces(): Observable<IRaces[]> {
+    return this.http
+      .get(this.apiRoutes.races)
+      .pipe(
+        map((data: any) => data.results as IRaces[])
+      );
+      }
 }

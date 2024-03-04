@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { RenduapiComponent } from './pages/rendu-api/rendu-api.component';
+import { FormCreationPersoComponent} from './pages/form-creation-perso/form-creation-perso.component';
 
 export const routes: Routes = [
     {
@@ -8,9 +8,8 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: "renduapi",
-        component: RenduapiComponent
-
+        path: "form-creation-perso",
+        component: FormCreationPersoComponent
     },
     {
         path: "**",

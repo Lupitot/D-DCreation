@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { RenduapiComponent } from './pages/rendu-api/rendu-api.component';
+import { RacesComponent } from './component/races-component/races-component.component';
+import { classesComponent } from './component/classes-component/classes-component.component';
 
 
 @Component({
@@ -8,11 +9,14 @@ import { RenduapiComponent } from './pages/rendu-api/rendu-api.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    RenduapiComponent
+    RacesComponent,
+    classesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'my-app';
+  races = RacesComponent;
+  classes = classesComponent;
 }

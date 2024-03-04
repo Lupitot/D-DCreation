@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RenduApiComponent } from './rendu-api.component';
+import { SelectNameComponent } from './select-name.component';
 
-describe('RenduApiComponent', () => {
-  let component: RenduApiComponent;
-  let fixture: ComponentFixture<RenduApiComponent>;
+describe('SelectNameComponent', () => {
+  let component: SelectNameComponent;
+  let fixture: ComponentFixture<SelectNameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RenduApiComponent]
+      imports: [SelectNameComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(RenduApiComponent);
+    fixture = TestBed.createComponent(SelectNameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
